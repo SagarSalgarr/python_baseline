@@ -1,3 +1,19 @@
+def askint():
+    while True:
+        try:
+            val = int(input("Please enter an integer: "))
+        except:
+            print("Looks like you did not enter an integer!")
+            continue
+        else:
+            print("Yep that's an integer!")
+            print(val)
+            break
+        
+        finally:
+            print("Finally, I executed!")
+
+
 def test_comparison():
     try:
         # Floating Point Numbers
@@ -16,11 +32,9 @@ def test_comparison():
         result = -0.0 == 0.0
         print("Negative Zero Test Result:", result)
 
-        # Equality of Different Types
         result = 1 == '1'
         print("Equality of Different Types Test Result:", result)
 
-        # Comparing Objects
         a = [1, 2, 3]
         b = a
         result1 = a == b  
@@ -35,7 +49,6 @@ def test_comparison():
         print("Comparison tests completed.")
 
 
-# Debugging
 def debug_comparison():
     try:
         result = 0.1 + 0.2
@@ -45,5 +58,8 @@ def debug_comparison():
     finally:
         print("Debugging completed.")
 
+
+askint()
 test_comparison()
 debug_comparison()
+

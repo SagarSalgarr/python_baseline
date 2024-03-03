@@ -1,0 +1,5 @@
+rocessing Large Text Files Efficiently:
+
+Understanding Chunking and Buffering for Memory Efficiency:
+
+When working with large files, reading the entire content into memory at once can exhaust system resources, leading to performance bottlenecks or even crashes. To address this, we employ a technique known as chunking. It involves reading a file in smaller, manageable blocks, processing those blocks, and then iteratively moving to the next block until the entire file is processed.
